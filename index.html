@@ -1,67 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio Linda Marques</title>
-  <link rel="stylesheet" href="style.css" />
 
-  <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <main class="container">
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="src/logo-studio-linda-marques.png" alt="logo-studio-linda-marques">
+      </div>
 
-    <header class="header">
-      <div class="content">
-            <div class="logo">
-                <img src="img/pngtree-cartoon-yellow-pizza-illustration-png-image_4634672-removebg-preview.png" alt="">
-                <h3>Studio Linda Marques</h3>
-            </div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <nav>
-                <ul class="list-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobrenos">Sobre nós</a></li>
-                    <li><a href="#cardapio">Serviços</a></li>
-                    <li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
-                    <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                    <li><a href="#"> <i class="fab fa-whatsapp"></i> </a></li>
-                </ul>
-            </nav>
-
-            <div class="menu-toggle">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-            </div>
-        </div>
-    </header>
-
-    <section class="description">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Sua melhor versão começa aqui.</h1>
       <p>
-        Especialistas em aplicações de mega hair, cílios, sobrancelhas e cuidados
-        femininos. Atendimento personalizado para valorizar sua beleza natural.
+        Especialistas em Mega Hair de Luxo, Cílios e Sobrancelhas.
+        Realce sua beleza natural com quem entende de autoestima feminina.
       </p>
-    </section>
-
-    <section class="actions">
-      <a href="https://wa.me/5591999999999" target="_blank" class="btn-whatsapp">
-        Agendar pelo WhatsApp
+      <a href="https://wa.me/SEUNUMERO" class="btn-cta">
+        Agende no WhatsApp
       </a>
+    </div>
+  </section>
 
-      <a href="https://instagram.com/seustudio" target="_blank" class="btn-instagram">
-        Instagram
-      </a>
-    </section>
+  <!-- SOBRE -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>
+        No Studio Linda Marques, acreditamos que a beleza é uma forma de expressão pessoal.
+        Com profissionais experientes e apaixonadas por realçar a sua feminilidade,
+        oferecemos serviços de alta qualidade para que você se sinta confiante e radiante.
+      </p>
+    </div>
+  </section>
 
-    <section class="info">
-      <p><strong>📍 Endereço:</strong> Av. Padre Bruno Sechi, 104 - Benguí, Belém - PA, 66635-557</p>
-      <p><strong>🕒 Horário:</strong> Seg a Sex – 9h às 18h</p>
-    </section>
+  <!-- SERVIÇOS -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
 
-  </main>
+      <div class="services-grid">
+        <div class="service">
+          <img src="src/mega-hair.jfif" alt="Aplicação de Mega Hair">
+          <h3>Mega Hair</h3>
+          <p>Extensões capilares de alta qualidade para um visual volumoso e natural.</p>
+        </div>
+
+        <div class="service">
+          <img src="src/cílios.jpg" alt="Aplicação de Cílios">
+          <h3>Cílios</h3>
+          <p>Aplicações de cílios para olhos mais expressivos e sedutores.</p>
+        </div>
+
+        <div class="service">
+          <img src="src/sobrancelha.jpg" alt="Design de Sobrancelhas">
+          <h3>Sobrancelhas</h3>
+          <p>Design e micropigmentação para sobrancelhas perfeitas.</p>
+        </div>
+        <div class="service">
+          <img src="src/tranças.jfif" alt="Aplicação de Cílios">
+          <h3>Tranças Box Braids</h3>
+          <p>Tranças box braids para um visual poderoso e autêntico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>O que Nossas Clientes Dizem</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Cliente 1">
+          <p>"Adorei o mega hair! Meus cabelos estão incríveis."</p>
+          <cite>- Maria Silva</cite>
+        </div>
+
+        <div class="testimonial">
+          <img src="https://images.pexels.com/photos/1239292/pexels-photo-1239292.jpeg" alt="Cliente 2">
+          <p>"Os cílios me deixaram com um olhar poderoso."</p>
+          <cite>- Ana Costa</cite>
+        </div>
+
+        <div class="testimonial">
+          <img src="https://images.pexels.com/photos/1239293/pexels-photo-1239293.jpeg" alt="Cliente 3">
+          <p>"Minhas sobrancelhas nunca estiveram tão perfeitas."</p>
+          <cite>- Carla Santos</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Galeria de Trabalhos</h2>
+
+      <div class="gallery-grid">
+        <img src="https://images.pexels.com/photos/3993445/pexels-photo-3993445.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3762801/pexels-photo-3762801.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE FINAL -->
+  <section class="about">
+    <div class="container" style="display:flex; gap:50px; flex-wrap:wrap;">
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702" alt="Espaço Studio">
+      </div>
+
+      <div class="about-text">
+        <h2>Por que escolher o Studio Linda Marques?</h2>
+        <p>Mais do que estética, entregamos confiança.</p>
+
+        <ul style="list-style:none;">
+          <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Profissionais Especialistas</li>
+          <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Ambiente Privativo</li>
+          <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Materiais Esterilizados</li>
+        </ul>
+
+        <a href="https://wa.me/SEUNUMERO" class="btn-cta">
+          Falar com uma consultora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>Studio Linda Marques</h3>
+      <p>Beleza, cuidado e elegância em cada detalhe.</p>
+    </div>
+
+    <div class="footer-info">
+      <p>
+        <strong>Endereço</strong><br>
+        Av. Padre Bruno Sechi, 104<br>
+        Benguí, Belém - PA
+      </p>
+
+      <p>
+        <strong>Horário</strong><br>
+        Seg a Sex – 9h às 18h
+      </p>
+
+      <p>
+        <strong>Contato</strong><br>
+        (91) 9 9999-9999<br>
+        contato@studioeclat.com
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <strong>Redes sociais</strong>
+      <ul class="social-links">
+        <li>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2026 Studio Linda Marques. Todos os direitos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+  
+
+  <a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>

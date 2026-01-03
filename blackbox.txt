@@ -1,0 +1,336 @@
+BLAKCBOX
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Studio - Especialistas em Beleza Feminina</title>
+    <meta name="description" content="Transforme sua beleza com aplicações de mega hair, cílios, sobrancelhas e cuidados femininos no Bella Studio. Agende seu atendimento via WhatsApp!">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e91e63;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/3762801/pexels-photo-3762801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c2185b;
+        }
+
+        /* Seções */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about, .services, .testimonials, .gallery, .contact {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #e91e63;
+            font-size: 2rem;
+        }
+
+        .about p {
+            text-align: center;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Serviços */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        /* Depoimentos */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        /* Galeria */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Contato */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                margin-top: 1rem;
+            }
+
+            .nav-links li {
+                margin-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bella Studio</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforme Sua Beleza com Especialistas</h1>
+            <p>Especialistas em mega hair, cílios, sobrancelhas e cuidados femininos. Agende agora e sinta-se incrível!</p>
+            <a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento%20no%20Bella%20Studio." class="cta-button" target="_blank">Agende via WhatsApp</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>No Bella Studio, acreditamos que a beleza é uma forma de expressão pessoal. Com profissionais experientes e apaixonadas por realçar a sua feminilidade, oferecemos serviços de alta qualidade para que você se sinta confiante e radiante. Venha nos visitar e descubra o poder de uma transformação completa!</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service">
+                <img src="https://images.pexels.com/photos/3993445/pexels-photo-3993445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Aplicação de Mega Hair">
+                <h3>Mega Hair</h3>
+                <p>Extensões capilares de alta qualidade para um visual volumoso e natural. Perfeito para quem deseja cabelos longos e cheios.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.pexels.com/photos/3762801/pexels-photo-3762801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Aplicação de Cílios">
+                <h3>Cílios</h3>
+                <p>Aplicações de cílios postiços ou alongamento para olhos mais expressivos e sedutores. Resultados duradouros e naturais.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Design de Sobrancelhas">
+                <h3>Sobrancelhas</h3>
+                <p>Design e micropigmentação para sobrancelhas perfeitas. Destaque seu olhar com técnicas modernas e precisas.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cuidados Femininos">
+                <h3>Cuidados Femininos</h3>
+                <p>Massagens, tratamentos faciais e corporais para relaxamento e bem-estar. Cuide de si mesma com nossos serviços exclusivos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>O que Nossas Clientes Dizem</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cliente 1">
+                <p>"Adorei o mega hair! Meus cabelos estão incríveis e naturais. Recomendo!"</p>
+                <cite>- Maria Silva</cite>
+            </div>
+            <div class="testimonial">
+                <img src="https://images.pexels.com/photos/1239292/pexels-photo-1239292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cliente 2">
+                <p>"Os cílios me deixaram com um olhar poderoso. Serviço impecável!"</p>
+                <cite>- Ana Costa</cite>
+            </div>
+            <div class="testimonial">
+                <img src="https://images.pexels.com/photos/1239293/pexels-photo-1239293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cliente 3">
+                <p>"Minhas sobrancelhas nunca estiveram tão perfeitas. Obrigada, Bella Studio!"</p>
+                <cite>- Carla Santos</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galeria de Trabalhos</h2>
+        <div class="gallery-grid">
+            <img src="https://images.pexels.com/photos/3993445/pexels-photo-3993445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trabalho 1">
+            <img src="https://images.pexels.com/photos/3762801/pexels-photo-3762801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trabalho 2">
+            <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trabalho 3">
+            <img src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trabalho 4">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <p>Pronto para transformar sua beleza? Agende seu atendimento agora mesmo via WhatsApp e garanta seu horário!</p>
+        <a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento%20no%20Bella%20Studio." class="cta-button" target="_blank">Fale Conosco no WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Bella Studio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Script simples para smooth scroll (opcional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
