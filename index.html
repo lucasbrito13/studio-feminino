@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Linda Marques</title>
+  <title>Studio Linda Marques | Mega Hair & Autoestima</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="scriptHamburger.js"></script>
 </head>
 <body>
 
   <header>
-    <nav class="container">
+    <nav class="nav container">
       <div class="logo">
-        <img src="src/logo-studio-linda-marques.png" alt="logo-studio-linda-marques">
+        <img src="src/logo-studio-linda-marques.png" alt="Logo Studio Linda Marques">
       </div>
+      <button class="hamburger"></button>
 
       <ul class="nav-links">
         <li><a href="#about">Sobre</a></li>
@@ -26,164 +28,191 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-content container">
-      <h1>Sua melhor versão começa aqui.</h1>
+      <span class="hero-tag">Especialistas em Autoestima</span>
+      <h1>Sua melhor versão <br><span>começa aqui.</span></h1>
       <p>
-        Especialistas em Mega Hair de Luxo, Cílios e Sobrancelhas.
-        Realce sua beleza natural com quem entende de autoestima feminina.
+        Referência em Mega Hair de Luxo, Cílios e Sobrancelhas em Belém. 
+        Um refúgio de beleza desenhado para realçar sua essência.
       </p>
-      <a href="https://wa.me/SEUNUMERO" class="btn-cta">
-        Agende no WhatsApp
-      </a>
+      <div class="hero-btns">
+        <a href="https://wa.me/+5591980174427" class="btn-cta">Agendar Experiência</a>
+      </div>
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>
-        No Studio Linda Marques, acreditamos que a beleza é uma forma de expressão pessoal.
-        Com profissionais experientes e apaixonadas por realçar a sua feminilidade,
-        oferecemos serviços de alta qualidade para que você se sinta confiante e radiante.
-      </p>
+  <section id="about" class="about-modern">
+    <div class="container about-wrapper">
+      <div class="about-content">
+        <span class="subtitle">Nossa Essência</span>
+        <h2>Transformando Olhares, <br><span>Elevando a Autoestima</span></h2>
+        <p>
+          No <strong>Studio Linda Marques</strong>, acreditamos que a beleza é uma forma de expressão pessoal única. 
+          Não se trata apenas de estética, mas de como você se sente ao se olhar no espelho.
+        </p>
+        <p>
+          Unimos técnica de luxo e um atendimento acolhedor para que cada visita seja uma experiência de renovação e cuidado exclusivo.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <strong>+5</strong>
+            <span>Anos de Experiência</span>
+          </div>
+          <div class="stat-item">
+            <strong>1k+</strong>
+            <span>Vidas Transformadas</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-visual">
+        <div class="image-stack">
+          <img src="src/galeria/1.jpeg" alt="Trabalho Studio Linda Marques" class="img-top">
+          <div class="experience-badge">
+            <p>Premium Quality</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
+  <!-- Serviços -->
+
   <section id="services" class="services">
     <div class="container">
-      <h2>Nossos Serviços</h2>
+      <div class="section-header">
+        <h2>Nossos Serviços</h2>
+        <p>Cuidados artesanais para resultados extraordinários</p>
+      </div>
 
       <div class="services-grid">
         <div class="service">
-          <img src="src/mega-hair.jpg" alt="Aplicação de Mega Hair">
-          <h3>Mega Hair</h3>
-          <p>Extensões capilares de alta qualidade para um visual volumoso e natural.</p>
+          <div class="service-img-wrapper">
+            <img src="src/mega-hair.jpg" alt="Mega Hair">
+          </div>
+          <div class="service-info">
+            <h3>Mega Hair</h3>
+            <p>Extensões de alta fidelidade para volume e comprimento natural.</p>
+          </div>
         </div>
 
         <div class="service">
-          <img src="src/cílios.jpg" alt="Aplicação de Cílios">
-          <h3>Cílios</h3>
-          <p>Aplicações de cílios para olhos mais expressivos e sedutores.</p>
+          <div class="service-img-wrapper">
+            <img src="src/cílios.jpg" alt="Cílios">
+          </div>
+          <div class="service-info">
+            <h3>Cílios</h3>
+            <p>Olhar marcante com técnicas que preservam a saúde dos fios.</p>
+          </div>
         </div>
 
         <div class="service">
-          <img src="src/sobrancelha.jpg" alt="Design de Sobrancelhas">
-          <h3>Sobrancelhas</h3>
-          <p>Design e micropigmentação para sobrancelhas perfeitas.</p>
+          <div class="service-img-wrapper">
+            <img src="src/sobrancelha.jpg" alt="Sobrancelhas">
+          </div>
+          <div class="service-info">
+            <h3>Sobrancelhas</h3>
+            <p>Design estratégico para harmonizar e valorizar seu rosto.</p>
+          </div>
         </div>
+
         <div class="service">
-          <img src="src/tranças.png" alt="Aplicação de Cílios">
-          <h3>Tranças Box Braids</h3>
-          <p>Tranças box braids para um visual poderoso e autêntico.</p>
+          <div class="service-img-wrapper">
+            <img src="src/tranças.png" alt="Tranças">
+          </div>
+          <div class="service-info">
+            <h3>Box Braids</h3>
+            <p>Estilo, ancestralidade e proteção para seus fios com perfeição.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- GALERIA -->
   <section id="gallery" class="gallery">
     <div class="container">
-      <h2>Galeria de Trabalhos</h2>
+      <div class="section-header">
+        <h2>Galeria de Resultados</h2>
+      </div>
 
       <div class="gallery-grid">
-        <img src="https://images.pexels.com/photos/3993445/pexels-photo-3993445.jpeg" alt="">
-        <img src="https://images.pexels.com/photos/3762801/pexels-photo-3762801.jpeg" alt="">
-        <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="">
-        <img src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg" alt="">
+        <img src="src/galeria/1.jpeg" alt="Resultado 1">
+        <img src="src/galeria/2.jpeg" alt="Resultado 2">
+        <img src="src/galeria/3.jpeg" alt="Resultado 3">
+        <img src="src/galeria/4.jpeg" alt="Resultado 4">
+        <img src="src/galeria/5.jpeg" alt="Resultado 5">
+        <img src="src/galeria/6.jpeg" alt="Resultado 6">
       </div>
-    </div>
-  </section>
-
-  <!-- SOBRE FINAL -->
-  <section class="about">
-    <div class="container" style="display:flex; gap:50px; flex-wrap:wrap;">
-      <div class="about-img">
-        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702" alt="Espaço Studio">
-      </div>
-
-      <div class="about-text">
-        <h2>Por que escolher o Studio Linda Marques?</h2>
-        <p>Mais do que estética, entregamos confiança.</p>
-
-        <ul style="list-style:none;">
-          <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Profissionais Especialistas</li>
-          <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Ambiente Privativo</li>
-          <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Materiais Esterilizados</li>
-        </ul>
-
-        <a href="https://wa.me/SEUNUMERO" class="btn-cta">
-          Falar com uma consultora
+      <div class="btn-galery">
+        <a target="_blank" href="https://www.instagram.com/lindamarquesstudio/" class="btn-cta outline">
+          Siga no Instagram <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
     </div>
   </section>
 
+  <section class="about-dark">
+    <div class="container proof">
+      <div class="about-img">
+        <img src="src/studiolindamarques-colaboradoras.jpg" alt="Equipe Studio">
+      </div>
+
+      <div class="about-text">
+        <span class="subtitle">Diferenciais</span>
+        <h2>Por que escolher o <br>Linda Marques?</h2>
+        <ul class="features-list">
+          <li><i class="fas fa-star"></i> <div><strong>Especialistas:</strong> Profissionais em constante atualização.</div></li>
+          <li><i class="fas fa-heart"></i> <div><strong>Ambiente:</strong> Espaço planejado para seu total conforto.</div></li>
+          <li><i class="fas fa-shield-halved"></i> <div><strong>Segurança:</strong> Biossegurança e materiais premium.</div></li>
+        </ul>
+        <a href="https://wa.me/+5591980174427" class="btn-cta">Falar com Consultora</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer" id="contact">
-  <div class="footer-container">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Studio Linda Marques</h3>
+        <p>Beleza, cuidado e elegância em cada detalhe. Belém, PA.</p>
+      </div>
 
-    <div class="footer-brand">
-      <h3>Studio Linda Marques</h3>
-      <p>Beleza, cuidado e elegância em cada detalhe.</p>
+      <div class="footer-info">
+        <p><strong>Endereço</strong><br>Av. Padre Bruno Sechi, 104 - Benguí</p>
+        <p><strong>Horário</strong><br>Seg a Sex – 9h às 18h</p>
+        <p><strong>Contato</strong><br>(91) 98017-4427</p>
+      </div>
+
+      <div class="footer-social">
+        <strong>Conecte-se</strong>
+        <ul class="social-links">
+          <li><a target="_blank" href="https://www.instagram.com/lindamarquesstudio/"><i class="fab fa-instagram"></i></a></li>
+          <li><a target="_blank" href="https://wa.me/+5591980174427"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Studio Linda Marques. Design Editorial de Luxo.</p>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer-info">
-      <p>
-        <strong>Endereço</strong><br>
-        Av. Padre Bruno Sechi, 104<br>
-        Benguí, Belém - PA
-      </p>
-
-      <p>
-        <strong>Horário</strong><br>
-        Seg a Sex – 9h às 18h
-      </p>
-
-      <p>
-        <strong>Contato</strong><br>
-        (91) 9 9999-9999<br>
-        contato@studioeclat.com
-      </p>
-    </div>
-
-    <div class="footer-social">
-      <strong>Redes sociais</strong>
-      <ul class="social-links">
-        <li>
-          <a href="#" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-copy">
-      <p>&copy; 2026 Studio Linda Marques. Todos os direitos reservados.</p>
-    </div>
-
-  </div>
-</footer>
-
-
-  
-
-  <a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/+5591980174427" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(s => {
+      s.classList.add('hidden');
+      observer.observe(s);
+    });
+  </script>
 </body>
 </html>
